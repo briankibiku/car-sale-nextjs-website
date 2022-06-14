@@ -1,0 +1,46 @@
+.centered-container{
+    text-align: center;
+    justify-content: center;
+}
+.catalogue_card {
+  margin-bottom: 20px;
+  padding: 20px;
+  width: 70%;
+  border-radius: 15px;
+  box-shadow: 0 0 50px #ccc;
+}
+/* Alignment styles */
+.center_align_content {
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  display: flex;
+}
+.center_align_item {
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  display: flex;
+}
+.catalogue_container{
+  width: 95%;
+  margin: 0 auto;
+  /* display: flex; */
+  padding-inline: 20px;
+  justify-content: center;
+  align-items: center;
+  text-align: center; 
+  
+}
+.centered_container{
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  padding-inline: 20px;
+  justify-content: center;
+  align-items: center;
+  text-align: center; 
+}

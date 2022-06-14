@@ -1,0 +1,106 @@
+.container {
+  max-height: 100vh;
+    width: 100%; 
+  }
+  .bluebackground{
+    background-color: #1596F8;
+    padding: 5px;
+    color: white;
+    font-size: 12px;
+  }
+
+  .searchbar{
+    background-color: #fff;
+    width: 70vw;  
+    margin: 0 auto;
+    margin-block: 10px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .styled_input{
+    height: 40px;
+    padding: 5px;
+    margin-inline: 10px;
+  }
+  .search_button{
+    background-color: #F84638;
+    height: 40px;
+    border: none;
+    color: white;
+    width: 120px;
+  }
+  .cart_bg{
+    background-color: black;
+    height: 40px;
+    width: 40px;
+    margin-inline: 10px;
+  }
+  .filterbar{
+    background-color: #f0ecf3;
+    width: 100%;   
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;   
+  }
+  .center_items{
+  width: 50%;
+  margin: 0 auto;
+  }
+  .filter_btn{
+    text-decoration: none;
+    color: #000;
+  }
+  .landing_page{
+    background-image: url('/images/showroom.png');
+    padding: 30px;
+    min-height: 75vh;
+    width: 100%;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .primary_btn{
+    background-color: #056BD9;
+  }
+
+.centered_container{
+  min-height: 70vh;
+  width: 95%;
+  background-size: contain;
+  margin: 0 auto;
+  z-index: 0;
+  display: flex;
+  padding-inline: 20px;
+  justify-content: right;
+  align-items: center;
+  text-align: right;
+  box-shadow:inset 0 0 0 2000px rgba(0, 0, 0, 0.6);
+  color: white;
+}
+
+/* Alignment styles */
+.center_align_content {
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  display: flex;
+}
+.center_align_item {
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  display: flex;
+}
+.catalogue_card {
+  margin-bottom: 20px;
+  padding: 20px;
+  width: 84%;
+  border-radius: 15px;
+  box-shadow: 0 0 50px #ccc;
+}
