@@ -19,6 +19,11 @@ export default function FilterBar() {
             </button>
             <ul className="dropdown-menu" aria-labelledby="dropdownMenuButton1">
               <li>
+                <a className="dropdown-item" href="/cars">
+                  All Cars
+                </a>
+              </li>
+              <li>
                 <a className="dropdown-item" href="/popular_cars">
                   Popular Cars
                 </a>
