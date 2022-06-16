@@ -37,20 +37,6 @@ export default function Home({ allPopularCars, popularCarsData }) {
       'route': '5000'
     }
   ];
-  // const popularCarsList = [
-  //   {
-  //     "brand": "Toyota",
-  //   },
-  //   {
-  //     "brand": "BMW",
-  //   },
-  //   {
-  //     "brand": "Nissan",
-  //   },
-  //   {
-  //     "brand": "Honda",
-  //   },
-  // ];
   const transmissionList = [
     {
       "type": "Manual"
