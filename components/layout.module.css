@@ -18,11 +18,6 @@
     align-items: center;
     text-align: center;
   }
-  .styled_input{
-    height: 40px;
-    padding: 5px;
-    margin-inline: 10px;
-  }
   .search_button{
     background-color: #F84638;
     height: 40px;
@@ -58,9 +53,12 @@
     padding: 30px;
     min-height: 75vh;
     width: 100%;
-    text-align: center;
+    text-align: right;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size:auto;
+    justify-content: right;
+    align-items: flex-end;
+    text-align: right;
   }
   .primary_btn{
     background-color: #056BD9;
@@ -73,10 +71,10 @@
   margin: 0 auto;
   z-index: 0;
   display: flex;
-  padding-inline: 20px;
-  justify-content: right;
+  padding-inline: 10vw;
+  justify-content: left;
   align-items: center;
-  text-align: right;
+  text-align: left;
   box-shadow:inset 0 0 0 2000px rgba(0, 0, 0, 0.6);
   color: white;
 }
@@ -103,4 +101,26 @@
   width: 84%;
   border-radius: 15px;
   box-shadow: 0 0 50px #ccc;
+}
+.footer{
+  /* margin: 45px; */
+  color: white;
+  width: 90vw;
+  background-color: #1596F8;
+  padding: 10px;
+  font-size: 10px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin-inline: 7px;
+}
+.quick_access{
+  margin-inline: 7px;
+  /* background-color: #000; */
+  box-shadow:inset 0 0 0 2000px rgba(0, 0, 0, 0.9);
+  width: 90vw;
+  height: 50vh;
+  color: white;
+  padding-inline: 10vw;
+  padding-block: 5vh;
 }

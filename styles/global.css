@@ -44,3 +44,25 @@
   align-items: center;
   text-align: center; 
 }
+.image_container{
+  border-radius: 10px;
+}
+.car_description{
+  font-size: 10px;
+  color: rgb(157, 152, 152);
+}
+.page_title{
+ font-size: 3.5vw;
+ font-weight: bold;
+}
+.page_text{
+  font-size: 1.5vw;
+ }
+ .car_identity{
+   font-size: 12px;
+ }
+ .styled_input{
+  height: 40px;
+  padding: 5px;
+  margin-inline: 10px;
+}
