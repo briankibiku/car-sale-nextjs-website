@@ -36,13 +36,30 @@ export async function getStaticProps(context) {
     props: { car: data, media: carMedia.carMediaList[0] },
   };
 }
-export default function CarDetail({ car, media }) {
+
+
+interface CarDetails {
+  id: string,
+  carName: string,
+  licensePlate: string, imageUrl: string, transmission: string, marketplacePrice: string,
+  city: string, fuelType: string, mileageUnit: string, year: string,
+  exteriorColor: string, mileage: string, sellingCondition: string,
+}
+interface MediaDetiail {
+  name: string,
+  url: string
+}
+interface PageProps {
+  car: CarDetails,
+  media: MediaDetiail[]
+}
+export default function CarDetail({ car, media }: PageProps) {
   return (
     <Layout>
       <div className="centered_container" style={{ marginTop: "20px" }}>
-        <div class="card col-sm-7" key={car.id}>
-          <div class="card-body">
-            <h5 class="card-title">{car.carName}</h5>
+        <div className="card col-sm-7" key={car.id}>
+          <div className="card-body">
+            <h5 className="card-title">{car.carName}</h5>
             <div className="col">
               <span className="car_description">Registration : </span>{" "}
               {car.licensePlate}

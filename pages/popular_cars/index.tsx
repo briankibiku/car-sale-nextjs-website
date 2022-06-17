@@ -13,7 +13,14 @@ export async function getStaticProps() {
     },
   };
 }
-export default function Home({ allPopularCars }) {
+interface AllPopularCars {
+  name: string,
+  imageUrl: string,
+}
+interface PageProps {
+  allPopularCars: AllPopularCars[]
+}
+export default function Home({ allPopularCars }: PageProps) {
   return (
     <Layout>
       <Head>
