@@ -15,7 +15,16 @@ export async function getStaticProps() {
     },
   };
 }
-export default function Home({ allPopularCars }) {
+
+interface AllCars {
+  id: string,
+  title: string,
+  licensePlate: string, imageUrl: string, transmission: string, marketplacePrice: string, city: string, fuelType: string,
+}
+interface PageProps {
+  allPopularCars: AllCars[]
+}
+export default function Home({ allPopularCars }: PageProps) {
   const [page, setPage] = useState(1);
   function handlePaginationChange(e, value) {
     setPage(value);
@@ -54,9 +63,9 @@ export default function Home({ allPopularCars }) {
           {allPopularCars.result.map((popularCar) => {
             return (
               <Grid p xs={12} sm={4}>
-                <div class="card" key={popularCar.id}>
-                  <div class="card-body">
-                    <h5 class="card-title">{popularCar.title}</h5>
+                <div className="card" key={popularCar.id}>
+                  <div className="card-body">
+                    <h5 className="card-title">{popularCar.title}</h5>
                     <div className="col">
                       <span className="car_description">Registration : </span>{" "}
                       {popularCar.licensePlate}
