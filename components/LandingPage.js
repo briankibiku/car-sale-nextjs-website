@@ -13,7 +13,12 @@ export default function LandingPage() {
               </h1>
               <a
                 className="btn btn-primary"
-                style={{ width: "120px" }}
+                style={{
+                  width: "220px",
+                  backgroundColor: "orange",
+                  border: "none",
+                  marginTop: "20px",
+                }}
                 href="/cars"
               >
                 Buy Now

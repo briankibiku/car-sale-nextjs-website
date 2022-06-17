@@ -7,6 +7,9 @@ export default function FilterBar() {
           <a className="btn" href="/">
             Home
           </a>
+          <a className="btn" href="/cars">
+            All Cars
+          </a>
           <div className="dropdown ">
             <button
               className="btn dropdown-toggle"
@@ -15,7 +18,7 @@ export default function FilterBar() {
               id="dropdownMenuButton1"
               aria-expanded="false"
             >
-              Cars
+              Filter Cars
             </button>
             <ul className="dropdown-menu" aria-labelledby="dropdownMenuButton1">
               <li>
@@ -26,16 +29,6 @@ export default function FilterBar() {
               <li>
                 <a className="dropdown-item" href="/popular_cars">
                   Popular Cars
-                </a>
-              </li>
-              <li>
-                <a className="dropdown-item" href="#">
-                  New Arrivals
-                </a>
-              </li>
-              <li>
-                <a className="dropdown-item" href="#">
-                  Vintage
                 </a>
               </li>
             </ul>

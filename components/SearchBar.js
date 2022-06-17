@@ -29,13 +29,25 @@ export default function SearchBar() {
         style={{ backgroundColor: " #ffffff" }}
       >
         <div className="col d-flex flex-direction-row">
-          <Image src="/images/logo.png" height={35} width={180} />
+          <a className="btn" href="/">
+            <Image src="/images/logo.png" height={35} width={180} />
+          </a>
           <input
             className="styled_input"
-            type="text"
-            id="myInput"
-            placeholder="Search for cars..."
+            list="car-brands"
+            id="car-make"
+            name="car-makes"
+            placeholder="Search brand..."
           />
+          <datalist id="car-brands">
+            <option value="BMW"></option>
+            <option value="Toyota"></option>
+            <option value="Honda"></option>
+            <option value="Isuzu"></option>
+            <option value="Mazda"></option>
+            <option value="Subaru"></option>
+            <option value="Mitsubishi"></option>
+          </datalist>
           {/* <ul id="myUL">
                         <li><a href="#">Adele</a></li>
                         <li><a href="#">Agnes</a></li>
