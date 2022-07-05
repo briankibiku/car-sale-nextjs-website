@@ -9,16 +9,16 @@ import QuickAccess from "../components/QuickAccess";
 
 export async function getStaticProps() {
   const allPopularCars = await getAllCarsData();
-  const popularCarsData = await getPopularCarsData()
+  // const popularCarsData = await getPopularCarsData()
   return {
     props: {
       allPopularCars,
-      popularCarsData
+      // popularCarsData
     },
   };
 }
 
-export default function Home({ allPopularCars, popularCarsData }) {
+export default function Home({ allPopularCars }) {
   const priceList = [
     {
       'range': "1,500$ - 2,500$",
@@ -55,6 +55,58 @@ export default function Home({ allPopularCars, popularCarsData }) {
     {
       "type": "Diesel"
     }
+  ];
+  const popularBrands = [
+    {
+      id: 13,
+      name: "BMW",
+      imageUrl: "https://storage.googleapis.com/img.autochek.africa/brands/bmw.svg"
+    },
+    {
+      id: 45,
+      name: "Honda",
+      imageUrl: "https://storage.googleapis.com/img.autochek.africa/brands/honda.svg"
+    },
+    {
+      id: 49,
+      name: "Isuzu",
+      imageUrl: "https://www.flaticon.com/svg/static/icons/svg/741/741407.svg"
+    },
+    {
+      id: 51,
+      name: "Jaguar",
+      imageUrl: "https://storage.googleapis.com/img.autochek.africa/marketplace/jaguar.jpg"
+    },
+    {
+      id: 68,
+      name: "Mazda",
+      imageUrl: "https://www.flaticon.com/svg/static/icons/svg/741/741407.svg"
+    },
+    {
+      id: 70,
+      name: "Mercedes-Benz",
+      imageUrl: "https://storage.googleapis.com/img.autochek.africa/brands/benz.svg"
+    },
+    {
+      id: 74,
+      name: "Mitsubishi",
+      imageUrl: "https://www.flaticon.com/svg/static/icons/svg/741/741407.svg"
+    },
+    {
+      id: 76,
+      name: "Nissan",
+      imageUrl: "https://storage.googleapis.com/img.autochek.africa/brands/nissan.svg"
+    },
+    {
+      id: 100,
+      name: "Subaru",
+      imageUrl: "https://www.flaticon.com/svg/static/icons/svg/741/741407.svg"
+    },
+    {
+      id: 106,
+      name: "Toyota",
+      imageUrl: "https://storage.googleapis.com/img.autochek.africa/marketplace/toyota.png"
+    }
   ]
   return (
     <Layout>
@@ -68,7 +120,7 @@ export default function Home({ allPopularCars, popularCarsData }) {
         <div className="col-sm-9 catalogue_container">
           <h1>
             <span style={{ color: "orange" }}>P</span>opular{" "}
-            <span style={{ color: "orange" }}>B</span>ands
+            <span style={{ color: "orange" }}>B</span>rands
           </h1>
 
           <Grid
@@ -77,7 +129,7 @@ export default function Home({ allPopularCars, popularCarsData }) {
             style={{ height: "120px" }}
             spacing={2}
           >
-            {popularCarsData.map((popularCar) => {
+            {popularBrands.map((popularCar) => {
               return (
                 <Grid item xs={12} sm={4}>
                   <div class="card">
@@ -123,13 +175,13 @@ export default function Home({ allPopularCars, popularCarsData }) {
             <div>
               <h5>Popular Cars</h5>
               <ul style={{ listStyle: "none", padding: "0px" }}>
-                {popularCarsData.map((popular) => (
+                {/* {popularCarsData.map((popular) => (
                   <li>
                     <a className="btn" style={{ padding: "0px" }}>
                       {popular.name}
                     </a>
                   </li>
-                ))}
+                ))} */}
               </ul>
             </div>
             <div>

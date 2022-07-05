@@ -29,7 +29,7 @@ export default function Home({ allPopularCars }) {
       </Head>
       <p className="center_align_item" style={{ marginTop: "20px" }}>You are viewing page {page}</p>
       <Pagination
-        count={allPopularCars.pagination.pageSize}
+        count={2}
         rowsPerPage={6}
         variant='outlined'
         color='primary'
@@ -98,7 +98,7 @@ export default function Home({ allPopularCars }) {
             );
           })}
           <Pagination
-            count={allPopularCars.pagination.pageSize}
+            count={2}
             variant='outlined'
             color='primary'
             className='pagination center_align_item'
